@@ -1,0 +1,8 @@
+# DOCKSMITH Sample App
+FROM alpine:latest
+WORKDIR /app
+COPY main.py .
+ENV APP_NAME=DocksmithDemo
+RUN echo "Build step 1 complete"
+RUN echo "Build step 2 complete"
+CMD ["python3", "main.py"]

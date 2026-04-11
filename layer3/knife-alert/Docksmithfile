@@ -1,0 +1,4 @@
+FROM alpine:latest
+COPY action.py /app/
+WORKDIR /app
+CMD ["python3", "action.py"]
